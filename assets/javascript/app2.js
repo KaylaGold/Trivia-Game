@@ -7,6 +7,7 @@ let userChoice = '';
 //User clicks "Start Game" button to start 30 second timer
 $("#StartGame").on("click", function () {
     alert ("Game has started! You have 30 seconds!");
+    startTimer();
     console.log("Start Game");
 }); 
 
