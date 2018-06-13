@@ -1,48 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css.styl.css" />
-   
+
 </head>
+
 <body>
 
     <h1>Fun Facts Trivia Game!</h1>
-<br>
-<br>
-<br>
-<div id="StartGame">
-    <button type="button">Click Me to Start Game!</button>
-</div>
+    <br>
+    <br>
+    <br>
+    <div id="StartGame">
+        <button type="button">Click Me to Start Game!</button>
+    </div>
 
-<p id="timer">Time Left:</p>    
-
-<h2>Trivia Question: A flock of crows is called a ...?</h2>
-        
+    <p>Time Remaining:
+        <span id="timer"></span>
+    </p>
 
     <div class="input-container">
 
+        <div id="clickQ">
+            <h2>Trivia Question 1: A flock of crows is called a ...?</h2>
             <form>
-                    <input type="radio" name="crow" value="murder" checked> Murder
-                    <br>
-                    <br>
+                <input type="radio" name="select1" value="murder" id="answer" checked> Murder
+                <br>
+                <br>
 
-                    <input type="radio" name="gorillas" value="band"> Band
-                    <br>
-                    <br>
-                    <input type="radio" name="lions" value="pride"> Pride
-                  </form>
-        
-    
-</div>
+                <input type="radio" name="select1" value="band" id="incorrectAnswer"> Band
+                <br>
+                <br>
+                <input type="radio" name="select1" value="pride" id="incorrectAnswer"> Pride
+            </form>
+
+            <h3>Trivia Question 2: Who played Rachel Green in TV show "Friends"?</h3>
+            <form>
+                <input type="radio" name="select1" value="jenniferLopez" id=" incorrectAnswer" checked> Jennifer Lopez
+                <br>
+                <br>
+
+                <input type="radio" name="select1" value="jenniferAniston" id="answer"> Jennifer Aniston
+                <br>
+                <br>
+                <input type="radio" name="select1" value="jenniferGarner" id="incorrectAnswer"> Jennifer Garner
+            </form>
+
+            <h4>Trivia Question 3: On what day of the week do most auto accidents happen?</h4>
+            <form>
+                <input type="radio" name="select1" value="saturday" id="answer" checked> Saturday
+                <br>
+                <br>
+
+                <input type="radio" name="select1" value="friday" id="incorrectAnswer"> Friday
+                <br>
+                <br>
+                <input type="radio" name="select1" value="tuesday" id="incorrectAnswer"> Tuesday
+            </form>
+
+
+            <h5>Trivia Question 4: If a coffee bean is darker, will its caffeine content be higher or lower?</h5>
+            <form>
+                <input type="radio" name="select1" value="higher" id="incorrectAnswer" checked> Higher
+                <br>
+                <br>
+
+                <input type="radio" name="select1" value="lower" id="answer"> Lower
+                <br>
+                <br>
+
+            </form>
+
+
+            <h6>Trivia Question 5: What is the biggest animal to have inhabited the Earth?</h6>
+            <form>
+                <input type="radio" name="select1" value="dinosaur" id="incorrectAnswer" checked> Dinosaur
+                <br>
+                <br>
+
+                <input type="radio" name="select1" value="mammoth" id="incorrectAnswer"> Mammoth
+                <br>
+                <br>
+                <input type="radio" name="select1" value="blueWhale" id="answer"> Blue Whale
+            </form>
+        </div>
+
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="./assets/javascript/app.js"></script>
+    <script src="./assets/javascript/app2.js"></script>
 </body>
+
 </html>
