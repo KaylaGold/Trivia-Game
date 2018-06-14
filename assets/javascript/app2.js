@@ -11,15 +11,15 @@ $(document).ready(function () {
 
   document.getElementById('timer').innerHTML =
     1 + ":" + 30;
-
+  
 
   function startTimer() {
     var presentTime = document.getElementById('timer').innerHTML;
     var timeArray = presentTime.split(/[:]+/);
     var m = timeArray[0];
     var s = checkSecond((timeArray[1] - 1));
-    if (s === 30) { m = m - 0 }
-    if (s < 0) {
+    if(s==59){m=m-1}
+    if (m < 0) {
       alert('You Are Out Of Time!')
       alert(' Submit & Check Your Answers!')
 
@@ -32,51 +32,64 @@ $(document).ready(function () {
 
     document.getElementById('timer').innerHTML =
       m + ":" + s;
-    setTimeout(startTimer, 1000);
+    setTimeout(startTimer, 1500);
   };
+
   function checkSecond(sec) {
-    if (sec < 10 && sec >= 0) { sec = "0" + sec }; // add zero in front of numbers < 10
-    if (sec < 0) { sec = "0" };
+    if (sec < 10 && sec >= 0) {
+      sec = "0" + sec
+    }; // add zero in front of numbers < 10
+    if (sec < 0) {
+      sec = "59"
+    };
     return sec;
   }
 
-  /*When User selects their answer, computer needs to determine correct/incorrect
-  and displays it on the screen.*/
-  let incorrectAnswer = 'false';
-  let answer = 'true';
-  let murder = 'true';
-  let jenniferAniston = 'true';
-  let saturday = 'true';
-  let lower = 'true';
-  let blueWhale = 'true';
-  let band = 'false';
-  let pride = 'false';
-  let jenniferLopez = 'false';
-  let jenniferGarner = 'false';
-  let friday = 'false';
-  let tuesday = 'false';
-  let higher = 'false';
-  let dinosaur = 'false';
-  let mammoth = 'false';
-  let userAnswer = '';
+  //////////////////////////////////////////////////
 
-  $("#clickQ").on("click", function () {
-    userAnswer();
-    function userAnswer() {
-      if (userAnswer === answer) {
-        console.log('Correct!');
-        return alert('Correct!');
-        document.getElementById('#answer').innerHTML = "Correct!"
 
-      } else (userAnswer === incorrectAnswer); {
-        console.log('Wrong!');
-        return alert('Wrong!');
-        document.getElementById('#incorrectAnswer').innherHTML = "Wrong!"
-      }
-    };
-  })
+
+////// Begin calculating correct vs false answers
+
+  function setScore() {
+    let score = $('input:checked[value=correct]').length
+    $('#score').text(score);
+  }
+
+
+  function correctScore() {
+    let correct = $('input:checked[value=correct]').length
+    $('#correct').text(correct);
+  }
+
+
+  function incorrectScore() {
+    let incorrectScore = $('input:checked[value=wrong]').length
+    $('#wrong').text(incorrectScore);
+  }
+
+  // set score on input change
+  $('input').change(setScore);
+  $('input').change(correctScore);
+  $('input').change(incorrectScore);
+
+  // set score on initialization
+  setScore();
+
+  correctScore();
+
+  incorrectScore();
+
+/// show scores
+/*showScore();
+
+$("#go").on("click", function showScore() {
+    var x = document.getElementById('go');
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}, */
+
 })
-
-
-/* for each of the 5 questions... if answer = bluewhale === true;
-                                    else false. 

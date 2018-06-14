@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css.styl.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css.style.css" />
 
 </head>
 
@@ -29,71 +29,98 @@
 
     <div class="input-container">
 
-        <div id="clickQ">
-            <h2>Trivia Question 1: A flock of crows is called a ...?</h2>
-            <form>
-                <input type="radio" name="select1" value="murder" id="answer" checked> Murder
-                <br>
-                <br>
 
-                <input type="radio" name="select1" value="band" id="incorrectAnswer"> Band
-                <br>
-                <br>
-                <input type="radio" name="select1" value="pride" id="incorrectAnswer"> Pride
-            </form>
+        <p>Trivia Question 1: A flock of crows is called a ...?</p>
+        <form>
 
-            <h3>Trivia Question 2: Who played Rachel Green in TV show "Friends"?</h3>
-            <form>
-                <input type="radio" name="select1" value="jenniferLopez" id=" incorrectAnswer" checked> Jennifer Lopez
-                <br>
-                <br>
+            <input type="radio" name="Question1" value="correct" id="answer1"> Murder
 
-                <input type="radio" name="select1" value="jenniferAniston" id="answer"> Jennifer Aniston
-                <br>
-                <br>
-                <input type="radio" name="select1" value="jenniferGarner" id="incorrectAnswer"> Jennifer Garner
-            </form>
-
-            <h4>Trivia Question 3: On what day of the week do most auto accidents happen?</h4>
-            <form>
-                <input type="radio" name="select1" value="saturday" id="answer" checked> Saturday
-                <br>
-                <br>
-
-                <input type="radio" name="select1" value="friday" id="incorrectAnswer"> Friday
-                <br>
-                <br>
-                <input type="radio" name="select1" value="tuesday" id="incorrectAnswer"> Tuesday
-            </form>
+            <br>
+            <br>
 
 
-            <h5>Trivia Question 4: If a coffee bean is darker, will its caffeine content be higher or lower?</h5>
-            <form>
-                <input type="radio" name="select1" value="higher" id="incorrectAnswer" checked> Higher
-                <br>
-                <br>
-
-                <input type="radio" name="select1" value="lower" id="answer"> Lower
-                <br>
-                <br>
-
-            </form>
+            <input type="radio" name="Question1" value="wrong" id="answer2"> Band
 
 
-            <h6>Trivia Question 5: What is the biggest animal to have inhabited the Earth?</h6>
-            <form>
-                <input type="radio" name="select1" value="dinosaur" id="incorrectAnswer" checked> Dinosaur
-                <br>
-                <br>
 
-                <input type="radio" name="select1" value="mammoth" id="incorrectAnswer"> Mammoth
-                <br>
-                <br>
-                <input type="radio" name="select1" value="blueWhale" id="answer"> Blue Whale
-            </form>
+            <br>
+            <br>
+
+
+            <input type="radio" name="Question1" value="wrong" id="answer3"> Pride
+
+        </form>
+
+        <p>Trivia Question 2: Who played Rachel Green in TV show "Friends"?</p>
+
+        <form>
+
+            <input type="radio" name="Question2" value="wrong" id=" answer1"> Jennifer Lopez
+            <br>
+            <br>
+
+            <input type="radio" name="Question2" value="correct" id="answer2"> Jennifer Aniston
+            <br>
+            <br>
+            <input type="radio" name="Question2" value="wrong" id="answer3"> Jennifer Garner
+
+        </form>
+
+        <p>Trivia Question 3: On what day of the week do most auto accidents happen?</p>
+        <form>
+            <input type="radio" name="Question3" value="correct" id="answer1"> Saturday
+            <br>
+            <br>
+
+            <input type="radio" name="Question3" value="wrong" id="answer2"> Friday
+            <br>
+            <br>
+            <input type="radio" name="Question3" value="wrong" id="answer3"> Tuesday
+        </form>
+
+
+        <p>Trivia Question 4: If a coffee bean is darker, will its caffeine content be higher or lower?</p>
+        <form>
+            <input type="radio" name="Quesiton4" value="wrong" id="answer1"> Higher
+            <br>
+            <br>
+
+            <input type="radio" name="Question4" value="correct" id="answer2"> Lower
+            <br>
+            <br>
+
+        </form>
+
+
+        <p>Trivia Question 5: What is the biggest animal to have inhabited the Earth?</p>
+        <form>
+            <input type="radio" name="Question5" value="wrong" id="answer1"> Dinosaur
+            <br>
+            <br>
+
+            <input type="radio" name="Question5" value="wrong" id="answer2"> Mammoth
+            <br>
+            <br>
+            <input type="radio" name="Question5" value="correct" id="answer3"> Blue Whale
+        </form>
+
+
+        <button onclick="showScore()">Submit</button>
+        <br>
+        <br>
+    <div id='go'>
+        Score:
+        <span id="score"></span>
+        Correct:
+        <span id="correct"></span>
+        Incorrect:
+        <span id="wrong"></span>
         </div>
+        
 
     </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
