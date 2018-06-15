@@ -81,15 +81,10 @@ $(document).ready(function () {
   incorrectScore();
 
 /// show scores
-/*showScore();
+$( "#button2" ).click(function() {
+  $( ".score" ).toggle();
+});
+  
+//
 
-$("#go").on("click", function showScore() {
-    var x = document.getElementById('go');
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}, */
-
-})
+});
