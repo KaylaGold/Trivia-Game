@@ -79,6 +79,8 @@ $(document).ready(function () {
     $(".score").toggle();
     $("#correct").css("background-color", "green");
     $("#wrong").css("background-color", "red");
+    startTimer --; 
+
   });
 
 
