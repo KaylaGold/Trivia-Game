@@ -15,109 +15,112 @@
 
 <body>
 
-    <h1>Fun Facts Trivia Game!</h1>
-    <br>
-    <br>
-    <br>
-    <div id="StartGame">
-        <button type="button">Click Me to Start Game!</button>
-    </div>
+    <div class="body">
 
-    <p>Time Remaining:
-        <span id="timer"></span>
-    </p>
+        <h1>Fun Facts Trivia Game!</h1>
+        <br>
 
-    <div class="input-container">
+        <div id="StartGame">
+            <button type="button">Click Me to Start Game!</button>
+        </div>
 
+        <p>Time Remaining:
+            <span id="timer"></span>
+        </p>
 
-        <p>Trivia Question 1: A flock of crows is called a ...?</p>
-        <form>
-
-            <input type="radio" name="Question1" value="correct" id="answer1"> Murder
-
-            <br>
-            <br>
+        <div class="input-container">
 
 
-            <input type="radio" name="Question1" value="wrong" id="answer2"> Band
+            <p>Trivia Question 1: A flock of crows is called a ...?</p>
+            <form>
+
+                <input type="radio" name="Question1" value="correct" id="answer1"> Murder
+
+                <br>
+                <br>
+
+
+                <input type="radio" name="Question1" value="wrong" id="answer2"> Band
 
 
 
-            <br>
-            <br>
+                <br>
+                <br>
 
 
-            <input type="radio" name="Question1" value="wrong" id="answer3"> Pride
+                <input type="radio" name="Question1" value="wrong" id="answer3"> Pride
 
-        </form>
+            </form>
 
-        <p>Trivia Question 2: Who played Rachel Green in TV show "Friends"?</p>
+            <p>Trivia Question 2: Who played Rachel Green in TV show "Friends"?</p>
 
-        <form>
+            <form>
 
-            <input type="radio" name="Question2" value="wrong" id=" answer1"> Jennifer Lopez
-            <br>
-            <br>
+                <input type="radio" name="Question2" value="wrong" id=" answer1"> Jennifer Lopez
+                <br>
+                <br>
 
-            <input type="radio" name="Question2" value="correct" id="answer2"> Jennifer Aniston
-            <br>
-            <br>
-            <input type="radio" name="Question2" value="wrong" id="answer3"> Jennifer Garner
+                <input type="radio" name="Question2" value="correct" id="answer2"> Jennifer Aniston
+                <br>
+                <br>
+                <input type="radio" name="Question2" value="wrong" id="answer3"> Jennifer Garner
 
-        </form>
+            </form>
 
-        <p>Trivia Question 3: On what day of the week do most auto accidents happen?</p>
-        <form>
-            <input type="radio" name="Question3" value="correct" id="answer1"> Saturday
-            <br>
-            <br>
+            <p>Trivia Question 3: On what day of the week do most auto accidents happen?</p>
+            <form>
+                <input type="radio" name="Question3" value="correct" id="answer1"> Saturday
+                <br>
+                <br>
 
-            <input type="radio" name="Question3" value="wrong" id="answer2"> Friday
-            <br>
-            <br>
-            <input type="radio" name="Question3" value="wrong" id="answer3"> Tuesday
-        </form>
-
-
-        <p>Trivia Question 4: If a coffee bean is darker, will its caffeine content be higher or lower?</p>
-        <form>
-            <input type="radio" name="Quesiton4" value="wrong" id="answer1"> Higher
-            <br>
-            <br>
-
-            <input type="radio" name="Question4" value="correct" id="answer2"> Lower
-            <br>
-            <br>
-
-        </form>
+                <input type="radio" name="Question3" value="wrong" id="answer2"> Friday
+                <br>
+                <br>
+                <input type="radio" name="Question3" value="wrong" id="answer3"> Tuesday
+            </form>
 
 
-        <p>Trivia Question 5: What is the biggest animal to have inhabited the Earth?</p>
-        <form>
-            <input type="radio" name="Question5" value="wrong" id="answer1"> Dinosaur
-            <br>
-            <br>
+            <p>Trivia Question 4: If a coffee bean is darker, will its caffeine content be higher or lower?</p>
+            <form>
+                <input type="radio" name="Quesiton4" value="wrong" id="answer1"> Higher
+                <br>
+                <br>
 
-            <input type="radio" name="Question5" value="wrong" id="answer2"> Mammoth
-            <br>
-            <br>
-            <input type="radio" name="Question5" value="correct" id="answer3"> Blue Whale
-        </form>
+                <input type="radio" name="Question4" value="correct" id="answer2"> Lower
+                <br>
+                <br>
 
- 
-        <button id="button2">Submit</button>
+            </form>
 
-        <div class="score" style="display: none">
+
+            <p>Trivia Question 5: What is the biggest animal to have inhabited the Earth?</p>
+            <form>
+                <input type="radio" name="Question5" value="wrong" id="answer1"> Dinosaur
+                <br>
+                <br>
+
+                <input type="radio" name="Question5" value="wrong" id="answer2"> Mammoth
+                <br>
+                <br>
+                <input type="radio" name="Question5" value="correct" id="answer3"> Blue Whale
+            </form>
+
+
+            <button id="button2">Submit</button>
+
+
+
+            <div class="score" style="display: none">
                 Score:
-                <span id="score"></span>
+                <span id="score" style="background-color:green"></span>
                 Correct:
-            <span id="correct"></span>
-            Incorrect:
-            <span id="wrong"></span>
-                
-    </div>
+                <span id="correct" style="background-color:green"></span>
+                Incorrect:
+                <span id="wrong" style="background-color: red"></span>
 
+            </div>
 
+        </div>
 
     </div>
 
