@@ -1,7 +1,7 @@
 # Trivia-Game
 Fun-Facts Trivia Game 
 
-Check it out! https://kaylagold.github.io/Trivia-Game/.
+Check it out! https://kaylagold.github.io/Trivia-Game/
 
 The Fun-Facts Trivia Game uses JavaScript for the logic and jQuery to manipulate HTML.
 The game is based on a multiple choice form with random fun facts.
